@@ -13,7 +13,7 @@
 
     <dependencies>
         <dependency>
-            <artifactId>pet-clinic</artifactId>
+            <artifactId>pet-clinic-data</artifactId>
             <groupId>dk.apendo</groupId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
