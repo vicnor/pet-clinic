@@ -1,11 +1,13 @@
 package dk.apendo.petclinic.services.map;
 
 import dk.apendo.petclinic.model.Vet;
-import dk.apendo.petclinic.services.CrudService;
+import dk.apendo.petclinic.services.VetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
-public class VetServiceMap extends AbstractMapServcie<Vet, Long> implements CrudService<Vet, Long> {
+@Service
+public class VetServiceMap extends AbstractMapServcie<Vet, Long> implements VetService {
     @Override
     public Set<Vet> findAll() {
         return super.findAll();
