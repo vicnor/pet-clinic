@@ -3,10 +3,14 @@ package dk.apendo.petclinic.services.jpa;
 import dk.apendo.petclinic.model.Specialty;
 import dk.apendo.petclinic.repositories.SpecialtyRepository;
 import dk.apendo.petclinic.services.SpecialtyService;
+import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
 import java.util.Set;
 
+@Service
+@Profile("jpa")
 public class SpecialtyJpaService implements SpecialtyService {
 
     private final SpecialtyRepository specialtyRepository;
